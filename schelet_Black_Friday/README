@@ -1,0 +1,8 @@
+    Am inceput tema prin a crea 3 clase Tema2(main) MyRunnable si MyRunnable2.
+    Clasa Tema2 reprezinta mainul programului unde citesc pathurile primite ca input si deschid primul nivel de treduri.
+Am plecat de la laboratorl 7 de pe ocw unde se foloseste ExxecutorService si mi am creat propiul pool.
+    In clasa MyRunnable incep citirea linie cu linie a fisierului orders.txt retin elementele intr-un hashmap si pe masura ce citesc fiecare
+linie deschid al doilea nivel de treduri tot prin Executor Service.
+    In clasa MyRunnable2 verific de cate ori apare fiecare element cheie din hashmap respectiv fieacare id de comanda si compar cu valoare asociata cheii respectiv nr de produse
+Atunci cand sunt egale dau shipp comenzii in fisierul de out dand pe masura ce parcurg fisierul order_products si fiecarei comenzi de produs in parte
+Am folosit BufferWritter deoarece este tread safe.
